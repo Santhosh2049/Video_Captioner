@@ -1,0 +1,10 @@
+opencv-python
+numpy
+pyyaml
+tqdm
+
+# Optional (for person gating)
+ultralytics
+
+# Optional (for local LLM via Ollama)
+requests

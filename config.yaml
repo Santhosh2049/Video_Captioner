@@ -1,0 +1,46 @@
+video:
+  sample_fps: 1           # frames per second to sample
+  max_frames: 48          # cap for testing (small clips)
+  resize_width: 640
+
+gating:
+  enabled: false          # keep false for now; true for scaling
+  method: "yolo"          # yolo | motion
+  yolo_model: "yolov8n.pt"
+  person_conf: 0.35
+  min_person_frames: 3
+
+caption:
+  method: "template"      # template | (later) blip | qwen_vl | videollm
+  # template captioner uses detections as text; good for scaffolding
+
+llm:
+  provider: ollama   # or "ollama"
+  openai:
+    model: gpt-4o-mini
+  ollama:
+    base_url: http://localhost:11434
+    model: llama3.2:latest
+
+actions:
+  allowed:
+    - UNKNOWN
+    - TALKING
+    - COOKING
+    - REMOVING HELMET
+    - DRIVING
+    - EATING
+    - SLEEPING
+    - READING
+    - WRITING
+
+motion_filter:
+  enabled: true
+  thresh: 0.02
+  pre_pad: 1
+  post_pad: 1
+
+pose:
+  model_path: models/pose_landmarker_lite.task
+  min_pose_confidence: 0.25
+  max_points_to_llm: 60

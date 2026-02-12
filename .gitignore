@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+
+# Virtualenv
+.venv/
+venv/
+env/
+test/
+# Secrets
+.env
+
+# Local configs / OS
+.DS_Store
+Thumbs.db
+
+# Outputs
+outputs/
+runs/
+*.mp4
+test/*.mp4
+
+# Models / large files (choose what you want to track)
+models/*.task
+
+# Editor
+.vscode/
+.idea/

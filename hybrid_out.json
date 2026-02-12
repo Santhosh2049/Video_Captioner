@@ -1,0 +1,99 @@
+{
+  "video": "test/video1000.mp4",
+  "fps": 25.0,
+  "duration_sec": 11.0,
+  "events_total": 11,
+  "events_used": 11,
+  "captioned_events": 0,
+  "timeline": [
+    {
+      "t0": 0.0,
+      "t1": 2.0,
+      "action_model": {
+        "label": "washing dishes",
+        "conf": 0.137
+      }
+    },
+    {
+      "t0": 1.0,
+      "t1": 3.0,
+      "action_model": {
+        "label": "washing dishes",
+        "conf": 0.076
+      }
+    },
+    {
+      "t0": 2.0,
+      "t1": 4.0,
+      "action_model": {
+        "label": "washing dishes",
+        "conf": 0.091
+      }
+    },
+    {
+      "t0": 3.0,
+      "t1": 5.0,
+      "action_model": {
+        "label": "washing dishes",
+        "conf": 0.102
+      }
+    },
+    {
+      "t0": 4.0,
+      "t1": 6.0,
+      "action_model": {
+        "label": "making tea",
+        "conf": 0.138
+      }
+    },
+    {
+      "t0": 5.0,
+      "t1": 7.0,
+      "action_model": {
+        "label": "making tea",
+        "conf": 0.124
+      }
+    },
+    {
+      "t0": 6.0,
+      "t1": 8.0,
+      "action_model": {
+        "label": "making tea",
+        "conf": 0.159
+      }
+    },
+    {
+      "t0": 7.0,
+      "t1": 9.0,
+      "action_model": {
+        "label": "washing dishes",
+        "conf": 0.075
+      }
+    },
+    {
+      "t0": 8.0,
+      "t1": 10.0,
+      "action_model": {
+        "label": "washing dishes",
+        "conf": 0.154
+      }
+    },
+    {
+      "t0": 9.0,
+      "t1": 11.0,
+      "action_model": {
+        "label": "opening bottle",
+        "conf": 0.062
+      }
+    },
+    {
+      "t0": 10.0,
+      "t1": 11.0,
+      "action_model": {
+        "label": "doing laundry",
+        "conf": 0.143
+      }
+    }
+  ],
+  "llm_summary": "**Overall Summary:**\nThe video appears to show a person performing various household tasks, including washing dishes, making tea, and doing laundry. The action models suggest that the person is primarily engaged in washing dishes, but there are also moments where they are making tea or opening a bottle.\n\n**Key Events (with timestamps):**\n\n* 0s-2s: Person is seen standing at a sink with water running, likely washing dishes.\n* 1s-3s: Action model switches to \"washing dishes\" with increasing confidence, but captions do not provide clear context.\n* 2s-4s: Person is shown holding a tea infuser and pouring hot water into a teapot, making tea.\n* 3s-5s: Action model switches back to \"washing dishes\", but person is now seen rinsing dishes under running water.\n* 4s-6s: Person opens a bottle of laundry detergent, but action model does not match this event.\n* 5s-7s: Person is shown sorting laundry, but captions do not provide clear context for this action.\n* 6s-8s: Person makes tea again, with increasing confidence in the action model.\n\n**Ambiguity between Action Labels and Captions:**\nThere are several instances where the action labels provided by the model do not match the captions:\n\n* The transition from \"washing dishes\" to \"making tea\" is unclear, as the person's actions do not directly indicate switching from washing dishes to making tea.\n* The appearance of \"opening bottle\" with a confidence level of 0.062 is not supported by any visual evidence in the provided timestamps.\n* The action model switches between \"washing dishes\", \"making tea\", and \"doing laundry\" without clear context, leaving room for interpretation about the person's activities.\n\nNote: The model's confidence levels can provide some insight into its uncertainty, but there are still instances where the labels do not align with the visual evidence."
+}

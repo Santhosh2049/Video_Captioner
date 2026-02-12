@@ -1,0 +1,27 @@
+{
+  "video": "test3.mp4",
+  "fps": 29.86,
+  "duration_sec": 9.38,
+  "yolo_every_n_frames": 12,
+  "roi_motion_thresh": 4.5,
+  "min_action_duration_sec": 0.6,
+  "caption_cooldown_sec": 2.0,
+  "active_refresh_sec": 4.0,
+  "events": [
+    {
+      "t": 3.99,
+      "person": {
+        "conf": 0.763,
+        "xyxy": [
+          0.5,
+          310.3,
+          281.9,
+          715.5
+        ]
+      },
+      "roi_motion_ema": 7.045,
+      "caption": "Bending over to work on a task."
+    }
+  ],
+  "llm_summary": "**Overall summary**\nThe video shows a person performing an activity that involves bending over.\n\n**Key events**\n\n* A person is detected (t: 3.99)\n\t+ The person is working on a task (caption: \"Bending over to work on a task.\")\n\t+ The person's position is tracked (xyxy: [0.5, 310.3, 281.9, 715.5])\n\t+ There is motion detected in the ROI (roi_motion_ema: 7.045)\n\n**Uncertainty / missing info**\nNone"
+}

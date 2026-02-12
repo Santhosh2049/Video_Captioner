@@ -1,0 +1,99 @@
+{
+  "video": "test/video1000.mp4",
+  "fps": 25.0,
+  "duration_sec": 11.0,
+  "det_every_n_frames": 10,
+  "motion_thresh": 6.0,
+  "refresh_sec": 8.0,
+  "caption_cooldown_sec": 2.0,
+  "events": [
+    {
+      "t": 0.0,
+      "motion": 0.0,
+      "motion_trigger": false,
+      "detected": {
+        "has_trigger": false,
+        "objects": []
+      },
+      "caption": "standing and interacting with controls."
+    },
+    {
+      "t": 5.44,
+      "motion": 6.149,
+      "motion_trigger": true,
+      "detected": {
+        "has_trigger": true,
+        "objects": [
+          {
+            "cls": 0,
+            "name": "person",
+            "conf": 0.5554412603378296,
+            "xyxy": [
+              0.21080604195594788,
+              23.621732711791992,
+              137.21490478515625,
+              239.45672607421875
+            ]
+          }
+        ]
+      },
+      "caption": "standing and interacting with controls."
+    },
+    {
+      "t": 7.48,
+      "motion": 8.71,
+      "motion_trigger": true,
+      "detected": {
+        "has_trigger": true,
+        "objects": [
+          {
+            "cls": 0,
+            "name": "person",
+            "conf": 0.4078618884086609,
+            "xyxy": [
+              156.1019744873047,
+              0.9633460640907288,
+              313.0344543457031,
+              237.4934539794922
+            ]
+          }
+        ]
+      },
+      "caption": "Bending down to pick up a helmet."
+    },
+    {
+      "t": 10.88,
+      "motion": 16.798,
+      "motion_trigger": true,
+      "detected": {
+        "has_trigger": true,
+        "objects": [
+          {
+            "cls": 0,
+            "name": "person",
+            "conf": 0.8536893725395203,
+            "xyxy": [
+              176.9012908935547,
+              10.666668891906738,
+              317.911865234375,
+              237.98268127441406
+            ]
+          },
+          {
+            "cls": 0,
+            "name": "person",
+            "conf": 0.6530976295471191,
+            "xyxy": [
+              33.638648986816406,
+              33.77481460571289,
+              132.2654571533203,
+              239.12474060058594
+            ]
+          }
+        ]
+      },
+      "caption": "standing with a strap around its neck."
+    }
+  ],
+  "llm_summary": "**Overall Summary**\nThe person is observed standing and interacting with controls, then bending down to pick up a helmet. The person's motion is tracked over time, with multiple detections of the person in different locations.\n\n**Key Events**\n\n* 0.0s: Person stands and interacts with controls.\n* 5.44s: Motion detected; person (high confidence) at (0.21, 23.62, 137.21, 239.46).\n* 7.48s: Motion detected; person (medium confidence) at (156.10, 0.96, 313.03, 237.49). Caption indicates bending down to pick up a helmet.\n* 10.88s: Motion detected; two people (high and medium confidence) at different locations.\n\n**Uncertainty / Missing Info**\nNone identified."
+}
